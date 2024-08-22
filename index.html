@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Progress Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .case-status {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .case-step {
+            width: 23%;
+            text-align: center;
+        }
+
+        .step-number {
+            font-size: 24px;
+            color: #fff;
+            background-color: #007bff;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            line-height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .step-label {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .case-step.active .step-number {
+            background-color: #28a745;
+        }
+
+        .case-step:not(.active) .step-number {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Case Progress Tracker</h1>
+        <p>Stay on top of your legal cases with ease and efficiency. Monitor the status of your legal matters from start to finish.</p>
+        
+        <div class="case-status">
+            <div class="case-step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Case Filed</div>
+            </div>
+            <div class="case-step">
+                <div class="step-number">2</div>
+                <div class="step-label">Preliminary Hearing</div>
+            </div>
+            <div class="case-step">
+                <div class="step-number">3</div>
+                <div class="step-label">Trial</div>
+            </div>
+            <div class="case-step">
+                <div class="step-number">4</div>
+                <div class="step-label">Verdict</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
